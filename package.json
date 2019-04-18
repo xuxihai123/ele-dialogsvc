@@ -1,6 +1,6 @@
 {
   "name": "ele-dialogsvc",
-  "version": "0.0.6",
+  "version": "0.0.1",
   "main": "dist/dialogsvc.umd.js",
   "module": "dist/dialogsvc.umd.js",
   "types": "types/index.d.ts",

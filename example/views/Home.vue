@@ -211,6 +211,7 @@ export default {
 .items {
   display: flex;
   flex-direction: column;
+  align-items: center;
   button {
     width: 300px;
     margin-left: 10px;
