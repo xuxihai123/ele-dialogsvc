@@ -1,4 +1,4 @@
-# dialogsvc
+# ele-dialogsvc
 
 ## Project setup
 
@@ -36,8 +36,12 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 
 ### usage
 
+```
+yarn install ele-dialogsvc
+```
+
 ```js
-import dialogSvc from 'dialogsvc';
+import dialogSvc from 'ele-dialogsvc';
 const modal = dialogSvc.open(<div>message</div>, {
   title: 'hello world',
   parent: '',

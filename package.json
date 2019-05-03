@@ -1,6 +1,7 @@
 {
   "name": "ele-dialogsvc",
   "version": "0.0.1",
+  "license": "MIT",
   "main": "dist/dialogsvc.umd.js",
   "module": "dist/dialogsvc.umd.js",
   "types": "types/index.d.ts",
@@ -8,6 +9,10 @@
     "serve": "vue-cli-service serve example/main.js",
     "build": "vue-cli-service build --target lib --name dialogsvc --formats umd  src/main.js  --report",
     "lint": "vue-cli-service lint"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xuxihai123/ele-dialogsvc.git"
   },
   "peerDependencies": {
     "vue": "^2.5.x",
