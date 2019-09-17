@@ -25,9 +25,11 @@
 </template>
 
 <script>
-import {Dialog as ElDialog} from 'element-ui';
+import {Dialog} from 'element-ui';
 export default {
-  components: {ElDialog},
+  components: {
+    'el-dialog': Dialog,
+  },
   data() {
     return {
       visible: false,

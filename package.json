@@ -1,6 +1,6 @@
 {
   "name": "ele-dialogsvc",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "license": "MIT",
   "main": "dist/dialogsvc.umd.js",
   "module": "dist/dialogsvc.umd.js",
