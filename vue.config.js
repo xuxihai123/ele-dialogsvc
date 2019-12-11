@@ -17,8 +17,8 @@ module.exports = {
 
     if (process.env.NODE_ENV === 'production') {
       config.externals({
-        vue: 'vue',
-        'element-ui': 'element-ui',
+        vue: 'Vue',
+        'element-ui': 'ELEMENT',
       });
     }
   },
