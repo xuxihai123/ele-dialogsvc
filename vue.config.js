@@ -17,8 +17,18 @@ module.exports = {
 
     if (process.env.NODE_ENV === 'production') {
       config.externals({
-        vue: 'Vue',
-        'element-ui': 'ELEMENT',
+        vue: {
+          root: 'Vue',
+          commonjs: 'vue',
+          commonjs2: 'vue',
+          amd: 'vue',
+        },
+        'element-ui': {
+          root: 'ELEMENT',
+          commonjs: 'element-ui',
+          commonjs2: 'element-ui',
+          amd: 'element-ui',
+        },
       });
     }
   },
