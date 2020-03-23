@@ -41,7 +41,13 @@ class ModalBase {
     vm.$nextTick(() => {
       vm.visible = false;
       vm.$destroy();
-      vm.$el.remove();
+      try {
+        vm.$el.remove();
+      } catch (e) {
+        if (vm.$el.parentNode) {
+          vm.$el.parentNode.removeChild(vm.$el);
+        }
+      }
     });
   }
   /**
