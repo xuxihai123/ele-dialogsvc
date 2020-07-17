@@ -55,6 +55,14 @@ modal.result.then(
   },
 );
 
+dialogSvc.open(<Helloworld></Helloworld>, {title:'hello lucy',parent:''}).result.then(
+  (result)=>{
+  console.log(result);
+  },
+  (reason)=>{
+    console.log(reason);
+});
+
 // modal.close('okok');
 // modal.dismiss('okok');
 
@@ -83,6 +91,10 @@ dialogSvc
   );
 ```
 
+### more usage
+
+[examples](https://github.com/xuxihai123/el-dialogsvc/blob/master/example/views/Home.vue)
+
 ### ModalOptions
 
 ```ts
@@ -99,7 +111,7 @@ interface ModalOptions {
   customClass?: boolean; // Dialog 的自定义类名
   closeOnClickModal?: boolean; // 是否可以通过点击 modal 关闭 Dialog
   closeOnPressEscape?: boolean; // 是否可以通过按下 ESC 关闭 Dialog
-  message?: any; // for alert/confirm
+  message?: any; // for alert/confirm message content
   showClose?: boolean; // 是否显示关闭按钮 default true
   center?: boolean; // 是否对头部和底部采用居中布局 defualt false
   parent?: Vue; // mounte dialog to parent or global
